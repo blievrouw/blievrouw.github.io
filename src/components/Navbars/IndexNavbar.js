@@ -88,9 +88,9 @@ function IndexNavbar() {
                   href="#pablo"
                   onClick={e => {
                     e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
+                    // document
+                    //   .getElementById("download-section")
+                    //   .scrollIntoView();
                   }}
                 >
                   {/* <i className="now-ui-icons arrows-1_cloud-download-93"></i> */}
