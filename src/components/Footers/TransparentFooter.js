@@ -12,14 +12,6 @@ function TransparentFooter() {
           <ul>
             <li>
               <a
-                href=""
-                target="_blank"
-              >
-                Aanbod
-                </a>
-            </li>
-            <li>
-              <a
                 href="/about"
                 // target="_blank"
               >

@@ -15,14 +15,6 @@ function DefaultFooter() {
             <ul>
               <li>
                 <a
-                  href=""
-                  target="_blank"
-                >
-                  Aanbod
-                </a>
-              </li>
-              <li>
-                <a
                   href="/about"
                 >
                   Over mezelf

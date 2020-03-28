@@ -40,27 +40,27 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       
-      <Route path="/blievrouw/" exact render={props => <Index {...props} />} />
+      <Route path="/" exact render={props => <Index {...props} />} />
 
       
       <Route
-        path="/blievrouw/about"
+        path="/about"
         render={props => <AboutPage {...props} />}
       />
       <Route
-        path="/blievrouw/who"
+        path="/who"
         render={props => <ForWhoPage {...props} />}
       />
       <Route
-        path="/blievrouw/offerings/coaching"
+        path="/offerings/coaching"
         render={props => <CoachingOfferingPage {...props} />}
       />
       <Route
-        path="/blievrouw/offerings/schedules"
+        path="/offerings/schedules"
         render={props => <ScheduleOfferingPage {...props} />}
       />
       <Route
-        path="/blievrouw/offerings/tests"
+        path="/offerings/tests"
         render={props => <TestingOfferingPage {...props} />}
       />
       {/* <Route
@@ -69,15 +69,7 @@ ReactDOM.render(
       /> */}
       {/* <Route path="/blievrouw/login-page" render={props => <LoginPage {...props} />} /> */}
 
-      
-      <Redirect from="/about" to="/blievrouw/about" />
-      <Redirect from="/who" to="/blievrouw/who" />
-      <Redirect from="/offerings/coaching" to="/blievrouw/offerings/coaching" />
-      <Redirect from="/offerings/schedules" to="/blievrouw/offerings/schedules" />
-      <Redirect from="/offerings/tests" to="/blievrouw/offerings/tests" />
-      <Redirect from="/offerings/tests" to="/blievrouw/offerings/tests" />
-      <Redirect from="/" to="/blievrouw/" />
-      <Redirect to="/blievrouw/" />
+      <Redirect to="/" />
 
       
     </Switch>
