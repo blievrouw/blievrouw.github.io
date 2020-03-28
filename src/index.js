@@ -39,37 +39,47 @@ import TestingOfferingPage from 'views/pages/subpages/TestingOfferingPage';
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact render={props => <Index {...props} />} />
+      
+      <Route path="/blievrouw/" exact render={props => <Index {...props} />} />
+
+      
       <Route
-        path="/nucleo-icons"
-        render={props => <NucleoIcons {...props} />}
-      />
-      <Route
-        path="/about"
+        path="/blievrouw/about"
         render={props => <AboutPage {...props} />}
       />
       <Route
-        path="/who"
+        path="/blievrouw/who"
         render={props => <ForWhoPage {...props} />}
       />
       <Route
-        path="/offerings/coaching"
+        path="/blievrouw/offerings/coaching"
         render={props => <CoachingOfferingPage {...props} />}
       />
       <Route
-        path="/offerings/schedules"
+        path="/blievrouw/offerings/schedules"
         render={props => <ScheduleOfferingPage {...props} />}
       />
       <Route
-        path="/offerings/tests"
+        path="/blievrouw/offerings/tests"
         render={props => <TestingOfferingPage {...props} />}
       />
-      <Route
-        path="/profile-page"
+      {/* <Route
+        path="/blievrouw/profile-page"
         render={props => <ProfilePage {...props} />}
-      />
-      <Route path="/login-page" render={props => <LoginPage {...props} />} />
-      <Redirect to="/" />
+      /> */}
+      {/* <Route path="/blievrouw/login-page" render={props => <LoginPage {...props} />} /> */}
+
+      
+      <Redirect from="/about" to="/blievrouw/about" />
+      <Redirect from="/who" to="/blievrouw/who" />
+      <Redirect from="/offerings/coaching" to="/blievrouw/offerings/coaching" />
+      <Redirect from="/offerings/schedules" to="/blievrouw/offerings/schedules" />
+      <Redirect from="/offerings/tests" to="/blievrouw/offerings/tests" />
+      <Redirect from="/offerings/tests" to="/blievrouw/offerings/tests" />
+      <Redirect from="/" to="/blievrouw/" />
+      <Redirect to="/blievrouw/" />
+
+      
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
