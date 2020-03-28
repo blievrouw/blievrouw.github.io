@@ -23,10 +23,9 @@ function DefaultFooter() {
               </li>
               <li>
                 <a
-                  href=""
-                  target="_blank"
+                  href="/about"
                 >
-                  Over mij
+                  Over mezelf
                 </a>
               </li>
               <li>

@@ -27,31 +27,50 @@ import "assets/demo/nucleo-icons-page-styles.css";
 // pages for this kit
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import LoginPage from "views/pages/LoginPage.js";
+import LandingPage from "views/pages/LandingPage.js";
+import ProfilePage from "views/pages/ProfilePage.js";
+import AboutPage from 'views/pages/subpages/AboutPage';
+import ForWhoPage from 'views/pages/subpages/ForWhoPage';
+import CoachingOfferingPage from 'views/pages/subpages/CoachingOfferingPage';
+import ScheduleOfferingPage from 'views/pages/subpages/ScheduleOfferingPage';
+import TestingOfferingPage from 'views/pages/subpages/TestingOfferingPage';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Switch>
-        <Route path="/index" render={props => <Index {...props} />} />
-        <Route
-          path="/nucleo-icons"
-          render={props => <NucleoIcons {...props} />}
-        />
-        <Route
-          path="/landing-page"
-          render={props => <LandingPage {...props} />}
-        />
-        <Route
-          path="/profile-page"
-          render={props => <ProfilePage {...props} />}
-        />
-        <Route path="/login-page" render={props => <LoginPage {...props} />} />
-        <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
-      </Switch>
+      <Route path="/index" render={props => <Index {...props} />} />
+      <Route
+        path="/nucleo-icons"
+        render={props => <NucleoIcons {...props} />}
+      />
+      <Route
+        path="/about"
+        render={props => <AboutPage {...props} />}
+      />
+      <Route
+        path="/who"
+        render={props => <ForWhoPage {...props} />}
+      />
+      <Route
+        path="/offerings/coaching"
+        render={props => <CoachingOfferingPage {...props} />}
+      />
+      <Route
+        path="/offerings/schedules"
+        render={props => <ScheduleOfferingPage {...props} />}
+      />
+      <Route
+        path="/offerings/tests"
+        render={props => <TestingOfferingPage {...props} />}
+      />
+      <Route
+        path="/profile-page"
+        render={props => <ProfilePage {...props} />}
+      />
+      <Route path="/login-page" render={props => <LoginPage {...props} />} />
+      <Redirect to="/index" />
+      <Redirect from="/" to="/index" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

@@ -20,10 +20,10 @@ function TransparentFooter() {
             </li>
             <li>
               <a
-                href=""
-                target="_blank"
+                href="/about"
+                // target="_blank"
               >
-                Over mij
+                Over mezelf
                 </a>
             </li>
             <li>

@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import MyNavBarBrand from './MyNavBarBrand';
+import { FACEBOOK_URL, INSTAGRAM_URL, STRAVA_URL } from '../../constants';
+
 // reactstrap components
 import {
   Button,
@@ -53,16 +57,8 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
-              target="_blank"
-              id="navbar-brand"
-            >
-              NeverNotMoving
-            </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Triathlon & Endurance coaching
-            </UncontrolledTooltip>
+            <MyNavBarBrand NavbarBrand={NavbarBrand} UncontrolledTooltip={UncontrolledTooltip} />
+
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -85,87 +81,59 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    // document
-                    //   .getElementById("download-section")
-                    //   .scrollIntoView();
-                  }}
+                  href="/about"
                 >
                   {/* <i className="now-ui-icons arrows-1_cloud-download-93"></i> */}
-                  <p>Over mij</p>
+                  <p>Over mezelf</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="/who"
+                >
+                  {/* <i className="now-ui-icons arrows-1_cloud-download-93"></i> */}
+                  <p>Voor wie</p>
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
-                  href="#pablo"
+                  // href="/offerings"
                   nav
-                  onClick={e => e.preventDefault()}
                 >
-                  {/* <i className="now-ui-icons design_app mr-1"></i> */}
-                  <p>Fotogallerij</p>
+                  <p>Aanbod</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
+                  <DropdownItem to="/offerings/coaching" tag={Link}>
+                    Trainingsbegeleiding
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
+                    href="/offerings/schedules"
                   >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
+                    {/* <i className="now-ui-icons design_bullet-list-67 mr-1"></i> */}
+                    Trainingsschema's
+                  </DropdownItem>
+                  <DropdownItem
+                    href="/offerings/tests"
+                  >
+                    {/* <i className="now-ui-icons design_bullet-list-67 mr-1"></i> */}
+                    Inspanningstesten
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <Button
-                  className="nav-link btn-neutral"
-                  color="info"
-                  href="#pablo"
-                  id="upgrade-to-pro"
-                  onClick={e => e.preventDefault()}
-                >
-                  {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
-                  <p>Aanbod</p>
-                </Button>
-                <UncontrolledTooltip target="#upgrade-to-pro">
-                  Cooming soon!
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
+                  href="/pictures"
                 >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  {/* <i className="now-ui-icons arrows-1_cloud-download-93"></i> */}
+                  <p>Fotogallerij</p>
                 </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
-                </UncontrolledTooltip>
               </NavItem>
+
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href={INSTAGRAM_URL}
                   target="_blank"
                   id="instagram-tooltip"
                 >
@@ -173,7 +141,33 @@ function IndexNavbar() {
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                  Volg me op instagram
+                </UncontrolledTooltip>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href={FACEBOOK_URL}
+                  target="_blank"
+                  id="facebook-tooltip"
+                >
+                  <i className="fab fa-facebook-square"></i>
+                  <p className="d-lg-none d-xl-none">Facebook</p>
+                </NavLink>
+                <UncontrolledTooltip target="#facebook-tooltip">
+                  Voeg me toe op facebook
+                </UncontrolledTooltip>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href={STRAVA_URL}
+                  target="_blank"
+                  id="strava-tooltip"
+                >
+                  <i className="fab fa-strava"></i>
+                  <p className="d-lg-none d-xl-none">Strava</p>
+                </NavLink>
+                <UncontrolledTooltip target="#strava-tooltip">
+                  Volg men Strava activiteit
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>
