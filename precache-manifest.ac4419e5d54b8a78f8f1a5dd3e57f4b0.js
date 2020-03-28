@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7c6a539c9eb1a8b45a5971740e3fef70",
+    "revision": "2af00e11e6ff79c2e8bf7a6ad7a3ef6b",
     "url": "/index.html"
   },
   {
-    "revision": "742031b67af82e349bb5",
-    "url": "/static/css/main.2f22a7ff.chunk.css"
+    "revision": "e3726966ff8b2efb465f",
+    "url": "/static/css/main.e4d31e80.chunk.css"
   },
   {
-    "revision": "44e09521cb83df31320e",
-    "url": "/static/js/2.38feb732.chunk.js"
+    "revision": "c457976cce8cce6cb416",
+    "url": "/static/js/2.ea743695.chunk.js"
   },
   {
-    "revision": "742031b67af82e349bb5",
-    "url": "/static/js/main.e5d7cf71.chunk.js"
+    "revision": "e3726966ff8b2efb465f",
+    "url": "/static/js/main.c34fcf3d.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -60,26 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/header.ffcc99c4.jpg"
   },
   {
-    "revision": "a76c7b4ce725bb07b1572699a5a78c62",
-    "url": "/static/media/hero-image-1.a76c7b4c.png"
-  },
-  {
-    "revision": "9616730d099782a3ea6c12c70aa181af",
-    "url": "/static/media/hero-image-2.9616730d.png"
-  },
-  {
-    "revision": "02cd0e2d2b27926d1ed5c31a00dd26fa",
-    "url": "/static/media/hero-image-3.02cd0e2d.png"
-  },
-  {
-    "revision": "138381e51c42397348a82b448b5fb61b",
-    "url": "/static/media/julie.138381e5.jpg"
-  },
-  {
-    "revision": "f8fba45478e18757e67c37b6644a3cec",
-    "url": "/static/media/landing.f8fba454.jpg"
-  },
-  {
     "revision": "4edbb0e03c2e33030f6dfd02500eb5a1",
     "url": "/static/media/little_kaz.4edbb0e0.png"
   },
@@ -106,10 +86,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8ebec31f5ce59f908db84d86aed5947f",
     "url": "/static/media/nucleo-outline.8ebec31f.woff2"
-  },
-  {
-    "revision": "225653f9f4dacef3e81bcc52f5ef547d",
-    "url": "/static/media/profile.225653f9.jpg"
   },
   {
     "revision": "f217f346c88e5fb2720ca7c28827ff72",
